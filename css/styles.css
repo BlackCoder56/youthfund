@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F5F5F5;
+  color: #333333;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: fixed; /* Fix the navbar at the top */
+  top: 0; /* Make sure it sticks to the top */
+  left: 0; /* Align it to the left edge */
+  width: 100%; /* Make the navbar full width */
+  background-color: #42b983;
+  padding: 10px 20%; /* Adjust padding to add space on the sides */
+  display: flex;
+  height: 50px;
+  justify-content: space-between; /* Distribute space between logo and links */
+  align-items: center;
+  z-index: 1000; /* Ensure the navbar stays on top of other content */
+}
+
+.logo {
+  font-size: 24px;
+  color: #FFD700;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  justify-content: center; /* Center the nav links */
+  flex-grow: 1; /* Allow the links to take up available space */
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #FFD700;
+  color: #333333;
+}
+
+.nav-link.active {
+  background-color: #FFD700;
+  color: #333333;
+}
+
+/* Hero Section */
+.hero {
+  position: relative; /* Set relative positioning for the overlay */
+  text-align: center;
+  padding: 0 20px; /* Remove top and bottom padding */
+  background-color: #42b983;
+  background-image: url('/home/elly/Desktop/websites/projects/youthfund/assets/images/hero.jpg'); /* Add your background image here */
+  background-size: cover; /* Make the background cover the entire hero section */
+  background-position: center; /* Center the background image */
+  color: white;
+  height: 100vh; /* Make the hero section fill the entire viewport height */
+  display: flex; /* Use Flexbox to center the content */
+  flex-direction: column; /* Stack the content vertically */
+  justify-content: center; /* Vertically center the content */
+  align-items: center; /* Horizontally center the content */
+  margin-top: 60px; /* Add top margin to avoid content being hidden behind the fixed navbar */
+}
+
+.hero::before {
+  content: ''; /* Create an empty pseudo-element */
+  position: absolute; /* Position it absolutely inside the .hero section */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(66, 185, 131, 0.7); /* Overlay with the color from the color scheme (#42b983) and some opacity */
+  z-index: 1; /* Make sure the overlay stays behind the text */
+}
+
+.hero h1, .hero p, .cta-btn {
+  z-index: 2; /* Make sure the text and button are on top of the overlay */
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  background-color: #FFD700;
+  color: #333333;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: white;
+  color: #42b983;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333333;
+  color: white;
+}

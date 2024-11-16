@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouthFund - Empowering Entrepreneurs</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">YouthFund</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="apply.html" class="nav-link">Apply</a></li>
+        <li><a href="team.html" class="nav-link">Team</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <h1>Welcome to YouthFund</h1>
+      <p>Your gateway to funding and resources for young entrepreneurs.</p>
+      <button class="cta-btn" onclick="location.href='apply.html'">Get Started</button>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 YouthFund. All rights reserved.</p>
+  </footer>
+
+
+  <script>
+    // Get the current full URL
+    const currentPage = window.location.href.split('?')[0];  // Remove query params
+  
+    // Get all navigation links
+    const navLinks = document.querySelectorAll('.nav-link');
+  
+    // Loop through each link and add the "active" class based on the current page
+    navLinks.forEach(link => {
+      const linkHref = link.href.split('?')[0];  // Remove query params for comparison
+  
+      if (linkHref === currentPage) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  </script>
+  
+  
+  
+</body>
+</html>
