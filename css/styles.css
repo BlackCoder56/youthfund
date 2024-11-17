@@ -62,14 +62,15 @@ body {
   color: #333333;
 }
 
+
 /* Hero Section */
 .hero {
   position: relative; /* Set relative positioning for the overlay */
   text-align: center;
   padding: 0 20px; /* Remove top and bottom padding */
   background-color: #42b983;
-  background-image: url('/assets/images/hero.jpg');
-   /* Add your background image here */
+  /* background-image: url('/assets/images/hero.jpg'); */
+  background-image: url('/home/elly/Desktop/websites/projects/youthfund/assets/images/hero.jpg'); /* Add your background image here */
   background-size: cover; /* Make the background cover the entire hero section */
   background-position: center; /* Center the background image */
   color: white;
@@ -133,8 +134,9 @@ footer {
 }
 
 .brand-highlight {
-  color: #42b983;
+  color: #FFD700;
   font-weight: bold;
+  font-weight: bolder;
 }
 
 .highlight {
@@ -223,4 +225,102 @@ footer {
   height: auto;
   object-fit: cover;
   border-radius: 8px;
+}
+
+/* Team Section */
+.team-section {
+  text-align: center;
+  padding: 50px 20%;
+  background-color: #f5f5f5;
+  background: linear-gradient(135deg, #f5f5f5 50%, #bfc4c8 100%);
+  /* Adds a subtle gradient for differentiation */
+  border-top: 3px solid #42b983; /* Optional: a border divider at the top */
+  /* background-image: url('/path/to/background-pattern.png'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8; /* Slight transparency for subtlety */
+}
+
+.team-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.team-section p {
+  font-size: 1rem;
+  color: #666666;
+  margin-bottom: 40px;
+}
+
+.team-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr); /* First Row: 2 Cards */
+}
+
+@media (min-width: 768px) {
+  .team-container:not(:nth-child(1)) {
+    grid-template-columns: repeat(4, 1fr); /* Rest: 4 Cards Per Row */
+  }
+}
+
+.first-two{
+  display: grid;  
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+}
+
+.team-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+}
+
+.card-image {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto -50px auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #42b983;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-card h3 {
+  margin-top: 60px;
+  font-size: 1.2rem;
+  color: #333333;
+}
+
+.team-card p {
+  font-size: 0.9rem;
+  color: #777777;
+  margin: 10px 0 20px;
+}
+
+.view-profile-btn {
+  background-color: #42b983;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.view-profile-btn:hover {
+  background-color: #369f72;
 }
