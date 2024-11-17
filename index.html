@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YouthFund - Empowering Entrepreneurs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <!-- Navbar -->
   <header>
     <nav class="navbar">
-      <a href="index.html" class="logo">YouthFund</a>
+      <a href="index.html" class="logo">
+        <span class="">YouthFund</span>
+      </a>
       <ul class="nav-links">
         <li><a href="index.html" class="nav-link">Home</a></li>
         <li><a href="about.html" class="nav-link">About</a></li>
@@ -24,37 +27,82 @@
   <!-- Hero Section -->
   <main>
     <section class="hero">
-      <h1>Welcome to YouthFund</h1>
+      <h1>Welcome to <span class="hero-logo">YouthFund</span></h1>
       <p>Your gateway to funding and resources for young entrepreneurs.</p>
       <button class="cta-btn" onclick="location.href='apply.html'">Get Started</button>
     </section>
-  </main>
+
+    <!-- About Us Section -->   
+    <section class="about-us">
+        <h1>About Us</h1>
+        <p>At <span class="brand-highlight">YouthFund</span>, we are committed to empowering young entrepreneurs to bring their business ideas to life.
+        <br>We provide funding opportunities, valuable resources, and mentorship programs tailored to your needs.
+        <br>Our mission is to turn your innovative ideas into successful ventures, fostering growth and success.</p>
+      
+        <!-- New Layout -->
+        <div class="about-us-container">
+          <!-- Information Div -->
+          <div class="info-div">
+            <h2>Empowering Dreams, Transforming Lives</h2>
+            <p>
+              At <span class="highlight">YouthFund</span>, we aim to <span class="highlight">nurture talent</span>, inspire 
+              <span class="highlight">innovation</span>, and provide the support system needed to achieve 
+              <span class="highlight">business success</span>. Our platform is designed to give 
+              <span class="highlight">young entrepreneurs</span> the tools to thrive in a competitive world.
+            </p>
+            <p>
+              We understand the challenges faced by aspiring entrepreneurs, from <span class="highlight">limited financial resources</span> 
+              to a lack of <span class="highlight">strategic guidance</span>. That’s why our mission is focused on addressing these gaps 
+              by offering <span class="highlight">comprehensive solutions</span>. With <span class="highlight">YouthFund</span>, you are not just receiving funding; 
+              you are joining a community that believes in your potential.
+            </p>
+            <p>
+              Our tailored programs include <span class="highlight">business development workshops</span>, one-on-one <span class="highlight">mentorship sessions</span>, 
+              and access to <span class="highlight">networking opportunities</span> with successful entrepreneurs and industry experts. 
+              Whether you are at the ideation stage or ready to scale your business, we provide 
+              <span class="highlight">customized resources</span> to suit your journey.
+            </p>
+            <p>
+              Join the <span class="highlight">YouthFund</span> movement today and be part of a mission to create sustainable 
+              and impactful businesses. Together, we can turn your <span class="highlight">ambitions</span> into achievements, fostering 
+              a brighter future for individuals and communities.
+            </p>
+          </div>
+          
+      
+          <!-- Image Div -->
+          <div class="image-div">
+            <img src="assets/images/about.jpg" alt="Young Entrepreneurs" />
+          </div>
+        </div>
+    </section>
   
+
+  
+  </main>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2024 YouthFund. All rights reserved.</p>
+    <p>&copy; 2024 <span class="brand-highlight">YouthFund</span>. All rights reserved.</p>
   </footer>
 
-
   <script>
-  // Get the current full URL
-  const currentPage = window.location.href.split('?')[0];  // Remove query params
+    // Get the current full URL
+    const currentPage = window.location.href.split('?')[0];  // Remove query params
 
-  // Get all navigation links
-  const navLinks = document.querySelectorAll('.nav-link');
+    // Get all navigation links
+    const navLinks = document.querySelectorAll('.nav-link');
 
-  // Loop through each link and add the "active" class based on the current page
-  navLinks.forEach(link => {
-    const linkHref = link.href.split('?')[0];  // Remove query params for comparison
+    // Loop through each link and add the "active" class based on the current page
+    navLinks.forEach(link => {
+      const linkHref = link.href.split('?')[0];  // Remove query params for comparison
 
-    if (linkHref === currentPage) {
-      link.classList.add('active');
-    } else {
-      link.classList.remove('active');
-    }
-  });
-</script> 
-  
+      if (linkHref === currentPage) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  </script>
 </body>
 </html>

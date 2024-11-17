@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #F5F5F5;
@@ -27,6 +27,10 @@ body {
   color: #FFD700;
   font-weight: bold;
   text-decoration: none;
+}
+
+.hero-logo{
+  color: #FFD700;
 }
 
 .nav-links {
@@ -94,7 +98,7 @@ body {
 
 .hero h1 {
   font-size: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 20px;  
 }
 
 .hero p {
@@ -119,10 +123,104 @@ body {
   color: #42b983;
 }
 
+
 /* Footer */
 footer {
   text-align: center;
   padding: 10px 0;
   background-color: #333333;
   color: white;
+}
+
+.brand-highlight {
+  color: #42b983;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #42b983;
+  font-weight: bold;
+}
+
+/* About Us Section */
+.about-us {
+  height: 86vh;
+  padding: 50px 20px;
+  background-color: #F5F5F5;
+  text-align: center;
+}
+
+.abt-section{
+  height: 90vh;
+  padding: 110px 20px;
+}
+
+.about-us h1 {
+  font-size: 32px;
+  color: #42b983;
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+/* About Us Container */
+.about-us-container {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin-top: 2rem;
+}
+
+/* Information Div */
+.info-div {
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  left: 20%;
+  top: 20%;
+  transform: translateY(-20%);
+  border-radius: 8px;
+}
+
+/* Motivating Title */
+.info-div h2 {
+  color: #42b983;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Paragraph Text */
+.info-div p {
+  line-height: 1.4;
+  color: #333;
+  text-align: justify;
+}
+
+/* Image Div */
+.image-div {
+  flex: 1;
+  height: 500px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-right: 5%;
+  margin-bottom: 7%;
+}
+
+.image-div img {
+  width: 45%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
 }
