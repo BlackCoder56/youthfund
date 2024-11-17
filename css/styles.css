@@ -68,8 +68,8 @@ body {
   text-align: center;
   padding: 0 20px; /* Remove top and bottom padding */
   background-color: #42b983;
-  /* background-image: url('/assets/images/hero.jpg'); */
-  background-image: url('/home/elly/Desktop/websites/projects/youthfund/assets/images/hero.jpg'); /* Add your background image here */
+  background-image: url('/assets/images/hero.jpg');
+   /* Add your background image here */
   background-size: cover; /* Make the background cover the entire hero section */
   background-position: center; /* Center the background image */
   color: white;
