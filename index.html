@@ -29,6 +29,7 @@
       <button class="cta-btn" onclick="location.href='apply.html'">Get Started</button>
     </section>
   </main>
+  
 
   <!-- Footer -->
   <footer>
@@ -37,25 +38,23 @@
 
 
   <script>
-    // Get the current full URL
-    const currentPage = window.location.href.split('?')[0];  // Remove query params
-  
-    // Get all navigation links
-    const navLinks = document.querySelectorAll('.nav-link');
-  
-    // Loop through each link and add the "active" class based on the current page
-    navLinks.forEach(link => {
-      const linkHref = link.href.split('?')[0];  // Remove query params for comparison
-  
-      if (linkHref === currentPage) {
-        link.classList.add('active');
-      } else {
-        link.classList.remove('active');
-      }
-    });
-  </script>
-  
-  
+  // Get the current full URL
+  const currentPage = window.location.href.split('?')[0];  // Remove query params
+
+  // Get all navigation links
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  // Loop through each link and add the "active" class based on the current page
+  navLinks.forEach(link => {
+    const linkHref = link.href.split('?')[0];  // Remove query params for comparison
+
+    if (linkHref === currentPage) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+</script> 
   
 </body>
 </html>
