@@ -185,6 +185,7 @@ footer {
   padding: 1.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 40%;
+  height: auto;
   left: 20%;
   top: 20%;
   transform: translateY(-20%);
@@ -257,12 +258,6 @@ footer {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(2, 1fr); /* First Row: 2 Cards */
-}
-
-@media (min-width: 768px) {
-  .team-container:not(:nth-child(1)) {
-    grid-template-columns: repeat(4, 1fr); /* Rest: 4 Cards Per Row */
-  }
 }
 
 .first-two{
@@ -369,6 +364,7 @@ fieldset{
   width: 60%;
   border-radius: 100%;
   object-fit: cover;
+  border: 3px solid #369f72;
 }
 
 /* Biography Information Div */
@@ -417,4 +413,35 @@ fieldset{
 .social-link:hover img {
   transform: scale(1.1);
   opacity: 0.8;
+}
+
+
+/* Responsive section */
+/* Tablet in portriat mode */
+@media (min-width: 576px) {
+  .team-container:not(:nth-child(1)) {
+    grid-template-columns: repeat(4, 1fr); /* Rest: 4 Cards Per Row */
+  }
+
+  .info-div h2 {
+    color: #03100a;
+  }
+  
+  /* Paragraph Text */
+  .info-div p {
+    line-height: 1.4;
+    /* color: #d81717; */
+    text-align: justify;
+  }
+}
+
+
+/* Tablet in landscape mode */
+@media (min-width: 768px) {
+  .team-container:not(:nth-child(1)) {
+    grid-template-columns: repeat(4, 1fr); /* Rest: 4 Cards Per Row */
+  }
+  .info-div h2 {
+    color: #5220a7;
+  }
 }
