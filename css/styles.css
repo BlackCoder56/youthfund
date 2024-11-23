@@ -422,10 +422,10 @@ fieldset{
   .team-container:not(:nth-child(1)) {
     grid-template-columns: repeat(4, 1fr); /* Rest: 4 Cards Per Row */
   }
-
+/* 
   .info-div h2 {
-    /* color: #03100a; */
-  }
+    color: #03100a;
+  } */
   
   /* Paragraph Text */
   .info-div p {
@@ -441,7 +441,7 @@ fieldset{
   .team-container:not(:nth-child(1)) {
     grid-template-columns: repeat(4, 1fr); /* Rest: 4 Cards Per Row */
   }
-  .info-div h2 {
-    /* color: #5220a7; */
-  }
+  /* .info-div h2 {
+    color: #5220a7;
+  } */
 }
