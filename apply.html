@@ -24,7 +24,62 @@
 
   <!-- Hero Section -->
   <main>
-        <h1>Apply here</h1>
+    <section class="loan-application-section">
+      <div class="loan-application-container">
+        <h2>Apply for a Loan</h2>
+        <form action="#" method="post" class="loan-application-form">
+          <div class="form-group">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+            <label>Sex:<br></label>
+            <div class="radio-group">
+              <label><input type="radio" name="sex" value="Male" required> Male</label>
+              <label><input type="radio" name="sex" value="Female" required> Female</label>
+              <label><input type="radio" name="sex" value="Other" required> Other</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+          </div>
+          <div class="form-group">
+            <label for="loan-type">Loan Type:</label>
+            <select id="loan-type" name="loan-type" required>
+              <option value="">Select a loan type</option>
+              <option value="instant-cash">Instant Cash</option>
+              <option value="invoice-discount">Invoice Discount</option>
+              <option value="corporate-salary-loan">Corporate Salary Loan</option>
+              <option value="unsecured">Unsecured Loan</option>
+              <option value="small-business">Small Business Loan</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="city">City:</label>
+            <select id="city" name="city" required>
+              <option value="">Select your city</option>
+              <option value="kampala">Kampala</option>
+              <option value="hoima">Hoima</option>
+              <option value="fortportal">Fort Portal</option>
+              <option value="lira">Lira</option>
+              <option value="mbarara">Mbarara</option>
+              <option value="masaka">Masaka</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="loan-amount">Loan Amount (UGX):</label>
+            <input type="number" id="loan-amount" name="loan-amount" placeholder="Enter loan amount" required>
+          </div>
+          <button type="submit" class="submit-button">Submit Application</button>
+        </form>
+      </div>
+    </section>
+    
   </main>
 
   <!-- Footer -->

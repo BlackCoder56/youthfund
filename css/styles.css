@@ -494,8 +494,89 @@ fieldset{
 }
 
 
-/* end form */
+/* end contact form */
 
+/* Apply form */
+.loan-application-section {
+  padding: 110px 10px;
+  background-color: #f5f5f5;
+}
+
+.loan-application-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.loan-application-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.loan-application-form .form-group {
+  margin-bottom: 15px;
+}
+
+.loan-application-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.loan-application-form input,
+.loan-application-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+}
+
+.loan-application-form input:focus,
+.loan-application-form select:focus {
+  border-color: #42b983;
+  outline: none;
+}
+
+.loan-application-form .radio-group label {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.radio-group label{
+  margin-left: 30px;
+}
+
+.loan-application-form .radio-group input {
+  margin-right: 5px;
+}
+
+.loan-application-form .submit-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #42b983;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loan-application-form .submit-button:hover {
+  background-color: #369766;
+}
+
+/* end Apply form */
 
 /* Responsive section */
 /* Tablet in portriat mode */
