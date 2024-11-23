@@ -424,7 +424,7 @@ fieldset{
   }
 
   .info-div h2 {
-    color: #03100a;
+    /* color: #03100a; */
   }
   
   /* Paragraph Text */
@@ -442,6 +442,6 @@ fieldset{
     grid-template-columns: repeat(4, 1fr); /* Rest: 4 Cards Per Row */
   }
   .info-div h2 {
-    color: #5220a7;
+    /* color: #5220a7; */
   }
 }
