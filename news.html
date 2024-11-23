@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouthFund - Empowering Entrepreneurs</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <span class="">YouthFund</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="apply.html" class="nav-link">Apply</a></li>
+        <li><a href="news.html" class="nav-link">News</a></li>
+        <li><a href="team.html" class="nav-link">Team</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="learn-page">
+        <div class="learn-container">
+          <!-- Sidebar Section -->
+          <aside class="sidebar">
+            <h3>Articles Preview</h3>
+            <ul class="article-list">
+              <li>
+                <a href="#article1">5 Tips for Loan Approval</a>
+                <p>Discover how to increase your chances of getting approved.</p>
+              </li>
+              <li>
+                <a href="#article2">Understanding Loan Types</a>
+                <p>A beginner’s guide to choosing the right loan for you.</p>
+              </li>
+              <li>
+                <a href="#article3">Stories from Loan Applicants</a>
+                <p>Read inspiring success stories from real applicants.</p>
+              </li>
+              <li>
+                <a href="#article4">Managing Loan Repayments</a>
+                <p>Effective strategies for staying on track with your payments.</p>
+              </li>
+            </ul>
+          </aside>
+      
+          <!-- Main Content Section -->
+          <main class="main-content">
+            <h2>Blog Articles</h2>
+      
+            <article id="article1">
+              <h3>5 Tips for Loan Approval</h3>
+              <p>
+                Applying for a loan can be challenging, but these tips will help you
+                increase your chances of approval. From preparing your documents to
+                understanding your credit score, we've got you covered!
+              </p>
+            </article>
+      
+            <article id="article2">
+              <h3>Understanding Loan Types</h3>
+              <p>
+                Loans come in many forms, and it's essential to choose the right one
+                for your needs. Learn about the different loan types, including instant
+                cash, salary loans, and more.
+              </p>
+            </article>
+      
+            <article id="article3">
+              <h3>Stories from Loan Applicants</h3>
+              <p>
+                Meet John, a small business owner, who used a corporate salary loan to
+                expand his business. Learn how other applicants overcame challenges to
+                achieve their goals.
+              </p>
+            </article>
+      
+            <article id="article4">
+              <h3>Managing Loan Repayments</h3>
+              <p>
+                Repayment can be stressful without proper planning. Discover tips for
+                budgeting and staying ahead of your payment schedule to maintain a
+                good credit record.
+              </p>
+            </article>
+          </main>
+        </div>
+      </section>
+      --->
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 <span class="brand-highlight">YouthFund</span>. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Get the current full URL
+    const currentPage = window.location.href.split('?')[0];  // Remove query params
+
+    // Get all navigation links
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    // Loop through each link and add the "active" class based on the current page
+    navLinks.forEach(link => {
+      const linkHref = link.href.split('?')[0];  // Remove query params for comparison
+
+      if (linkHref === currentPage) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>

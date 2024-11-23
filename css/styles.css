@@ -517,6 +517,9 @@ fieldset{
   color: #333;
 }
 
+.loan-application-form {
+  padding: 0px 30px;
+}
 .loan-application-form .form-group {
   margin-bottom: 15px;
 }
@@ -530,7 +533,7 @@ fieldset{
 
 .loan-application-form input,
 .loan-application-form select {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -543,9 +546,11 @@ fieldset{
   border-color: #42b983;
   outline: none;
 }
-
+.radio-group{
+  display: flex;
+}
 .loan-application-form .radio-group label {
-  display: inline-block;
+  display: flex;
   margin-right: 10px;
   font-size: 16px;
   color: #333;
@@ -561,7 +566,7 @@ fieldset{
 
 .loan-application-form .submit-button {
   display: block;
-  width: 100%;
+  width: 50%;
   padding: 10px;
   background-color: #42b983;
   color: #fff;
@@ -570,6 +575,8 @@ fieldset{
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .loan-application-form .submit-button:hover {
@@ -577,6 +584,88 @@ fieldset{
 }
 
 /* end Apply form */
+
+/* News page */
+.learn-page {
+  padding:  120px 0px 0px 0px;
+  background-color: #f5f5f5;
+  height: 80vh;
+}
+
+.learn-container {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.sidebar h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.article-list {
+  list-style: none;
+  padding: 0;
+}
+
+.article-list li {
+  margin-bottom: 15px;
+}
+
+.article-list a {
+  font-weight: bold;
+  color: #42b983;
+  text-decoration: none;
+}
+
+.article-list a:hover {
+  text-decoration: underline;
+}
+
+.article-list p {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0 0;
+}
+
+.main-content {
+  flex: 2;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.main-content article {
+  margin-bottom: 20px;
+}
+
+.main-content article h3 {
+  margin-bottom: 10px;
+  color: #42b983;
+}
+
+.main-content article p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* End News page */
 
 /* Responsive section */
 /* Tablet in portriat mode */
